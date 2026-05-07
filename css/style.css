@@ -218,3 +218,42 @@ font-weight: 700;
 .why-lease__item-text{
     text-align: left;
 }
+
+.how-does{
+    padding-bottom: 150px;
+}
+
+.how-does__inner{
+    min-width: 600px;
+    margin: 0 auto;
+}
+
+.how-does__title{
+    font-size: 24px;
+    font-weight: 700;
+    padding-top: 50px;
+}
+
+.how-does__text{
+    padding: 50px 0 70px;
+    counter-reset: myCounter;
+}
+
+.how-does__item{
+    list-style-type: none;
+}
+
+.how-does__item::before{
+counter-increment: myCounter;
+content: counter(myCounter);
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 48px;
+font-weight: 700;
+background-color: #0066FF;
+width: 100px;
+height: 100px;
+border-radius: 50%;
+color: #fff;
+}
